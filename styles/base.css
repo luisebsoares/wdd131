@@ -17,7 +17,6 @@
 
 .chivo-regular {
     font-family: var(--font-body);
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
