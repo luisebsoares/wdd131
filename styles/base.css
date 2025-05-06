@@ -1,3 +1,14 @@
+:root {
+    --color-dark: #0C1618;
+    --color-primary: #004643;
+    --color-background: #FAF4D3;
+    --color-secondary: #D1AC00;
+    --color-accent: #F6BE9A;
+
+    --font-heading: 'Cambo', serif;
+    --font-body: 'Chivo', sans-serif;
+}
+
 .cambo-regular {
     font-family: "Cambo", serif;
     font-weight: 400;
@@ -9,4 +20,109 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+/*typography*/
+body {
+    font-family: 'Chivo', sans-serif;
+    background-color: #FAF4D3;
+    color: #0C1618;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+h1,
+h2 {
+    font-family: 'Cambo', serif;
+    color: #004643;
+}
+
+.header-title h1 {
+    font-family: 'Cambo', serif;
+    font-size: 1.5rem;
+    color: #FAF4D3;
+    margin-bottom: 1rem;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004643;
+    color: #FAF4D3;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-family: 'Cambo', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+nav.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav.navigation a {
+    color: #FAF4D3;
+    text-decoration: none;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav.navigation a:hover {
+    background-color: #F6BE9A;
+    color: #004643;
+    transform: scale(1.05);
+}
+
+/* main */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* card */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* footer */
+footer {
+    background-color: #004643;
+    color: #FAF4D3;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #F6BE9A;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
