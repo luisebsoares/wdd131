@@ -27,7 +27,8 @@ header {
     padding: 1rem;
 }
 
-header h1 {
+header h1,
+h2 {
     font-family: var(--font-heading);
 }
 
