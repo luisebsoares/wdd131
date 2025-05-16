@@ -36,6 +36,7 @@ header h2 {
 }
 
 nav.navigation {
+    flex: auto;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
