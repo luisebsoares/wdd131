@@ -54,15 +54,9 @@ h2 {
     margin: 0;
 }
 
-.weather-icon::after {
-    content: '';
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url("../images/weather-icon.svg") no-repeat center;
-    background-size: contain;
-    margin-left: 0.5rem;
+.weather-icon {
     vertical-align: middle;
+    margin-left: 0.5rem;
 }
 
 ul {
