@@ -89,14 +89,10 @@ footer {
 
 @media screen and (min-width: 768px) {
     .weather-icon::after {
-        content: " ⛅";
-        display: inline;
-        background: none;
-        width: auto;
-        height: auto;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        /* was 1.2rem */
+        margin-left: 0.4rem;
         vertical-align: middle;
-        margin-left: 0.3rem;
     }
 
     .hero-container {
@@ -115,11 +111,12 @@ footer {
 
     .hero-container .card {
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 1.5rem;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        width: 250px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        font-size: 1.05rem;
     }
 
     .data {
@@ -128,7 +125,7 @@ footer {
     }
 
     .weather {
-        top: 20%;
+        top: 60%;
         right: 5%;
     }
 }
