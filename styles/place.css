@@ -20,15 +20,31 @@ body {
 }
 
 header {
-    text-align: center;
     background-color: var(--color-primary);
     color: white;
-    padding-bottom: 0.5rem;
+    text-align: center;
+    padding: 2rem 2rem;
 }
 
 header h1 {
     font-family: var(--font-heading);
-    padding: 1rem;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.flag-icon {
+    width: 75px;
+    height: auto;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flag-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 header picture img {
@@ -89,8 +105,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     .weather-icon::after {
-        font-size: 1.5rem;
-        /* was 1.2rem */
+        font-size: 1.3rem;
         margin-left: 0.4rem;
         vertical-align: middle;
     }
@@ -113,10 +128,17 @@ footer {
         position: absolute;
         background-color: rgba(255, 255, 255, 0.95);
         padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         width: 320px;
         font-size: 1.05rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero-container .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
     }
 
     .data {
