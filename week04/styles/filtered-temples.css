@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambo&family=Chivo:wght@300&display=swap');
+
+:root {
+    --color-dark: #0C1618;
+    --color-primary: #004643;
+    --color-background: #FAF4D3;
+    --color-secondary: #D1AC00;
+    --color-accent: #F6BE9A;
+
+    --font-heading: 'Cambo', serif;
+    --font-body: 'Chivo', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+}
+
+header h2 {
+    font-family: var(--font-body)
+}
+
+nav.navigation {
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav.navigation a {
+    color: var(--color-background);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav.navigation a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: var(--font-heading);
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--color-dark);
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+#menuBtn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-background);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    #menuBtn {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+}
+
+nav.navigation a.active {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    transform: scale(1.1);
+    font-weight: bold;
+}
