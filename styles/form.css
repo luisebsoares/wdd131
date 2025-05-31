@@ -1,0 +1,147 @@
+:root {
+    --color-dark: #0C1618;
+    --color-primary: #004643;
+    --color-background: #FAF4D3;
+    --color-secondary: #D1AC00;
+    --color-accent: #F6BE9A;
+
+    --font-heading: 'Cambo', serif;
+    --font-body: 'Chivo', sans-serif;
+}
+
+.cambo-regular {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chivo-regular {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.4rem;
+    transform: scale(1.1);
+}
+
+input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+
+label span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    fieldset label,
+    .form-section label {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    select,
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+}
