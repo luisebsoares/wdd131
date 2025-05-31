@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #1A1F36;
+    --accent-color: #A3FF12;
+    --background-color: #F8F8F8;
+    --text-color: #333333;
+    --button-text-color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--accent-color);
+    font-size: 3.5rem;
+    margin-bottom: .5rem;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 1rem;
+}
+
+.highlight1 {
+    color: var(--primary-color);
+}
+
+.highlight2 {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.highlight2:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
