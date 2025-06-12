@@ -59,6 +59,28 @@ document.addEventListener("DOMContentLoaded", () => {
       </form>
     `;
     formContainer.style.display = "block";
+
+    const form = formContainer.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent actual submission
+
+      const client = {
+        name: form.name.value,
+        phone: form.phone.value,
+        email: form.email.value,
+        method: form.method.value,
+        location: form.addressOrGym ? form.addressOrGym.value : "",
+        trainer: form.trainer ? form.trainer.value : "",
+        sessionDate: form.session.value
+      };
+
+      // Save to localStorage
+      localStorage.setItem("lastClient", JSON.stringify(client));
+
+      alert("Thanks! Your session was saved.");
+      form.reset();
+    });
   };
 
   btnHome.addEventListener("click", () => renderForm("home"));
