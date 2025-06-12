@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siteplan Document</title>
+    <meta name="description" content="siteplan for final project.">
+    <meta name="author" content="Luis Brasil Soares">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <script src="scripts/getdates1.js" defer></script>
+    <script src="scripts/forms1.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="primary-bg text-center">
+        <h1>YourPeak Fitness</h1>
+        <p>Your personalized path to fitness — from the gym or from home</p>
+    </header>
+
+    <nav class="navigation">
+        <a class="highlight2 active" href="homeypf.html">HOME</a> |
+        <a class="highlight2" href="trainers.html">TRAINERS</a> |
+        <a class="highlight2" href="pricing.html">PRICING</a>
+    </nav>
+
+
+    <main class="container text-center">
+        <section class="section">
+            <div class="hero-img" style="background-color: #ddd; padding: 2rem;">
+                <h2>Your peak starts here</h2>
+                <img src="images/hero-home.jpg" alt="Hero showing training"
+                    style="width: 100%; max-width: 800px; height: auto;" loading="lazy">
+
+            </div>
+
+            <div class="section text-center">
+                <button id="btnHome" class="primary-bg">Train from Home</button>
+                <button id="btnGym" class="primary-bg">Train at Gym</button>
+            </div>
+
+            <div id="formContainer" class="section" style="max-width: 500px; margin: 2rem auto; display: none;"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> YourPeak Fitness - Luis Brasil Soares</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
